@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الذكاء الاصطناعي في التعليم 2025 | المرجع الشامل للمعلمين</title>
+    <meta name="description" content="الدليل الشامل للمعلمين العرب لاستخدام الذكاء الاصطناعي في التعليم - 30+ أداة، سيناريوهات عملية، والمساعد الذكي سراج">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+            --jordan-flag: linear-gradient(to bottom, #000000 33%, #ffffff 33%, #ffffff 66%, #007a3d 66%);
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 1.5rem auto 0;
+        }
+
+        /* Jordan Banner */
+        .jordan-banner {
+            background: linear-gradient(135deg, #000000 0%, #1a472a 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jordan-banner::before {
+            content: '🇯🇴';
+            position: absolute;
+            font-size: 15rem;
+            right: -3rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.1;
+        }
+
+        .jordan-banner-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .jordan-banner h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .jordan-flag {
+            display: inline-block;
+            width: 40px;
+            height: 25px;
+            background: var(--jordan-flag);
+            margin: 0 0.5rem;
+            border-radius: 3px;
+            vertical-align: middle;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: var(--primary);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .card-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .card-badge.new {
+            background: var(--secondary);
+            animation: pulse 2s infinite;
+        }
+
+        .card-badge.jordan {
+            background: #007a3d;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Tool Cards */
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .tool-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .tool-title {
+            font-size: 1.4rem;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        .tool-price {
+            background: var(--secondary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .tool-price.paid {
+            background: var(--accent);
+        }
+
+        .tool-description {
+            color: var(--text);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .tool-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tool-features li:before {
+            content: '✓';
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .tool-link {
+            display: block;
+            text-align: center;
+            padding: 0.8rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .tool-link:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Scenario Cards */
+        .scenario-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .scenario-number {
+            font-size: 3rem;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scenario-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .scenario-steps {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.15);
+            border-radius: 10px;
+            border-right: 4px solid white;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-time {
+            background: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Downloads Section */
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .download-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 3px solid transparent;
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .download-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-card h3 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .file-size {
+            color: var(--text);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .download-btn:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 1rem 2rem;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--light);
+            padding: 4rem 2rem;
+            border-radius: 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .author-info {
+            flex-grow: 1;
+        }
+
+        .author-name {
+            font-weight: bold;
+            color: var(--dark);
+        }
+
+        .author-role {
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+            padding-right: 0.5rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Statistics Bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                🤖 دليل الذكاء الاصطناعي في التعليم
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#tools">الأدوات</a></li>
+                <li><a href="#siraj">سراج 🇯🇴</a></li>
+                <li><a href="#scenarios">سيناريوهات</a></li>
+                <li><a href="#downloads">التحميلات</a></li>
+                <li><a href="#resources">موارد</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>🚀 دليلك الشامل للذكاء الاصطناعي في التعليم</h1>
+            <p>المرجع العربي الأول والأكثر شمولية - محدث ديسمبر 2025</p>
+            
+            <div class="btn-group">
+                <a href="#downloads" class="btn">📥 تحميل الدليل الكامل</a>
+                <a href="#siraj" class="btn btn-secondary">🇯🇴 اكتشف سراج</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">30+</span>
+                    أداة ذكاء اصطناعي
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    سيناريوهات عملية
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">45+</span>
+                    مصدر موثوق
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    محتوى محدث 2025
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Jordan Banner -->
+        <div class="jordan-banner" id="siraj">
+            <div class="jordan-banner-content">
+                <h3>🇯🇴 المساعد الذكي "سراج" - فخر التعليم الأردني</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">أول مساعد ذكي عربي متكامل | إطلاق أكتوبر 2025</p>
+                
+                <div class="stats-bar" style="max-width: 900px; margin: 2rem auto;">
+                    <div class="stat-item">
+                        <span class="stat-value">16K+</span>
+                        <span class="stat-label">معلم مستخدم</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">55K+</span>
+                        <span class="stat-label">طالب مستفيد</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">350K+</span>
+                        <span class="stat-label">محادثة تفاعلية</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">92%</span>
+                        <span class="stat-label">معدل الرضا</span>
+                    </div>
+                </div>
+
+                <a href="https://siraj.moe.gov.jo" target="_blank" class="btn" style="background: white; color: #007a3d; margin-top: 1rem;">
+                    🚀 ابدأ مع سراج الآن
+                </a>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <section>
+            <div class="section-header">
+                <h2>✨ لماذا هذا الدليل؟</h2>
+                <p>كل ما تحتاجه للبدء والاحتراف في استخدام الذكاء الاصطناعي</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <span class="card-icon">🎯</span>
+                    <h3>محدث بالكامل</h3>
+                    <p>جميع الأدوات والمعلومات محدثة حتى ديسمبر 2025، مع أحدث الإصدارات والميزات</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🇯🇴</span>
+                    <h3>تركيز عربي وأردني</h3>
+                    <p>تغطية شاملة للمساعد الذكي "سراج" والمبادرات الأردنية الرائدة</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">💡</span>
+                    <h3>سيناريوهات عملية</h3>
+                    <p>أمثلة واقعية بخطوات تفصيلية وتوقيت محدد للتطبيق الفوري</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">📚</span>
+                    <h3>30+ أداة موثقة</h3>
+                    <p>دليل شامل لأفضل أدوات الذكاء الاصطناعي مع روابط ومراجع</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">⚡</span>
+                    <h3>سهل التطبيق</h3>
+                    <p>خطوات واضحة ونماذج جاهزة للاستخدام الفوري في الصف</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🌟</span>
+                    <h3>مجاني بالكامل</h3>
+                    <p>جميع الملفات والموارد متاحة مجاناً للمعلمين العرب</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Tools Section -->
+        <section id="tools">
+            <div class="section-header">
+                <h2>🛠️ أحدث أدوات الذكاء الاصطناعي 2025</h2>
+                <p>الأدوات الأكثر قوة وفعالية للمعلمين - محدثة ديسمبر 2025</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab('global-tools')">الأدوات العالمية</button>
+                <button class="tab-btn" onclick="openTab('jordan-tools')">الأدوات الأردنية 🇯🇴</button>
+                <button class="tab-btn" onclick="openTab('specialized-tools')">أدوات متخصصة</button>
+            </div>
+
+            <!-- Global Tools Tab -->
+            <div id="global-tools" class="tab-content active">
+                <div class="cards-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🌟 Google Gemini 3</div>
+                            <div class="card-badge new">جديد 2025</div>
+                        </div>
+                        <div class="tool-price">مجاني (5 طلبات/يوم)</div>
+                        <p class="tool-description">أحدث نموذج من Google مع قدرات خارقة في التفكير العميق والواجهات التوليدية</p>
+                        <ul class="tool-features">
+                            <li>Deep Think Mode للمسائل المعقدة</li>
+                            <li>Gemini Agent للمهام المتعددة</li>
+                            <li>تكامل كامل مع Google Workspace</li>
+                            <li>واجهات توليدية تلقائية</li>
+                        </ul>
+                        <a href="https://gemini.google.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">💬 ChatGPT-5</div>
+                            <div class="card-badge new">محدث 2025</div>
+                        </div>
+                        <div class="tool-price paid">20$ شهرياً</div>
+                        <p class="tool-description">أقوى نموذج من OpenAI مع ميزات مخصصة للتعليم</p>
+                        <ul class="tool-features">
+                            <li>وضع /study المخصص للتعليم</li>
+                            <li>تحليل ملفات حتى 100 صفحة</li>
+                            <li>Deep Research للبحث المعمق</li>
+                            <li>دعم محسّن للغة العربية</li>
+                        </ul>
+                        <a href="https://chat.openai.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🎨 MagicSchool AI</div>
+                            <div class="card-badge new">80+ أداة</div>
+                        </div>
+                        <div class="tool-price">مجاني 100%</div>
+                        <p class="tool-description">Swiss Army Knife للمعلمين - أكثر من 80 أداة متخصصة</p>
+                        <ul class="tool-features">
+                            <li>إنشاء دروس وأنشطة تفاعلية</li>
+                            <li>مولد اختبارات ذكي</li>
+                            <li>Chatbot Builder مخصص</li>
+                            <li>Virtual Lab Assistant</li>
+                        </ul>
+                        <a href="https://www.magicschool.ai" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">📓 NotebookLM</div>
+                            <div class="card-badge">من Google</div>
+                        </div>
+                        <div class="tool-price">مجاني تماماً</div>
+                        <p class="tool-description">أداة بحث وتحليل قوية مع إنشاء بودكاست تلقائي</p>
+                        <ul class="tool-features">
+                            <li>تحميل حتى 50 مصدر</li>
+                            <li>Audio Overview (بودكاست تلقائي)</li>
+                            <li>تحليل PDF ومواقع</li>
+                            <li>دليل دراسة تلقائي</li>
+                        </ul>
+                        <a href="https://notebooklm.google.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">✏️ Eduaide AI</div>
+                            <div class="card-badge">100+ نوع محتوى</div>
+                        </div>
+                        <div class="tool-price paid">5.99$ شهرياً</div>
+                        <p class="tool-description">أداة شاملة لإنشاء جميع أنواع المحتوى التعليمي</p>
+                        <ul class="tool-features">
+                            <li>ترجمة فورية 15+ لغة</li>
+                            <li>IEP Generator محسّن</li>
+                            <li>مولد خطط دروس ذكي</li>
+                            <li>Rubric Builder متقدم</li>
+                        </ul>
+                        <a href="https://www.eduaide.ai" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">⚡ Brisk Teaching</div>
+                            <div class="card-badge">إضافة Chrome</div>
+                        </div>
+                        <div class="tool-price">مجاني</div>
+                        <p class="tool-description">20+ أداة تعمل مباشرة في Google Docs & Slides</p>
+                        <ul class="tool-features">
+                            <li>تغذية راجعة فورية</li>
+                            <li>تصحيح تلقائي</li>
+                            <li>مولد أسئلة سريع</li>
+                            <li>تبسيط النصوص</li>
+                        </ul>
+                        <a href="https://www.briskteaching.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jordan Tools Tab -->
+            <div id="jordan-tools" class="tab-content">
+                <div class="highlight-box">
+                    <h3>🇯🇴 المبادرات الأردنية الرائدة في الذكاء الاصطناعي</h3>
+                    <p>الأردن في طليعة التعليم الذكي العربي</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🌟 سراج</div>
+                            <div class="card-badge jordan">مساعد ذكي</div>
+                        </div>
+                        <div class="tool-price">مجاني 100%</div>
+                        <p class="tool-description">أول مساعد ذكي عربي متكامل مدعوم بالذكاء الاصطناعي</p>
+                        <ul class="tool-features">
+                            <li>16,000+ معلم مستخدم</li>
+                            <li>55,000+ طالب مستفيد</li>
+                            <li>محتوى مبني على المناهج الأردنية</li>
+                            <li>دعم متواصل 24/7</li>
+                        </ul>
+                        <a href="https://siraj.moe.gov.jo" target="_blank" class="tool-link" style="background: #007a3d;">زيارة سراج ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">📚 JoLearn</div>
+                            <div class="card-badge jordan">منصة رسمية</div>
+                        </div>
+                        <div class="tool-price">مجاني</div>
+                        <p class="tool-description">منصة التعلم الإلكتروني الأردنية الرسمية</p>
+                        <ul class="tool-features">
+                            <li>مواد وأدوات تعليمية</li>
+                            <li>دليل للمعلم والطالب</li>
+                            <li>تطبيق جوال متاح</li>
+                            <li>محتوى منهجي كامل</li>
+                        </ul>
+                        <a href="https://jolearn.jo" target="_blank" class="tool-link" style="background: #007a3d;">زيارة JoLearn ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">📊 OpenEMIS</div>
+                            <div class="card-badge jordan">نظام معلومات</div>
+                        </div>
+                        <div class="tool-price">مجاني</div>
+                        <p class="tool-description">نظام المعلومات التربوية الأردني</p>
+                        <ul class="tool-features">
+                            <li>استعلام عن النتائج</li>
+                            <li>متابعة الحضور والغياب</li>
+                            <li>السجلات الأكاديمية</li>
+                            <li>آمن ومرتبط بالوزارة</li>
+                        </ul>
+                        <a href="https://emis.moe.gov.jo" target="_blank" class="tool-link" style="background: #007a3d;">زيارة OpenEMIS ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🎓 جو أكاديمي</div>
+                            <div class="card-badge jordan">منصة خاصة رائدة</div>
+                        </div>
+                        <div class="tool-price paid">اشتراك</div>
+                        <p class="tool-description">منصة تعليمية أردنية رائدة منذ 2014</p>
+                        <ul class="tool-features">
+                            <li>13,000+ دورة تعليمية</li>
+                            <li>ملايين ساعات الفيديو</li>
+                            <li>31 من أوائل التوجيهي 2025</li>
+                            <li>مناهج وطنية ودولية</li>
+                        </ul>
+                        <a href="https://www.joacademy.com" target="_blank" class="tool-link" style="background: #007a3d;">زيارة جو أكاديمي ←</a>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <h3 style="color: var(--dark); margin-bottom: 1rem;">🎯 الاستراتيجية الأردنية للذكاء الاصطناعي 2023-2027</h3>
+                    <div class="stats-bar">
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #007a3d;">8,000+</span>
+                            <span class="stat-label">معلم مدرب</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #007a3d;">3,000+</span>
+                            <span class="stat-label">موظف حكومي مدرب</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #007a3d;">26%</span>
+                            <span class="stat-label">زيادة في الوعي</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" style="color: #007a3d;">18</span>
+                            <span class="stat-label">مؤسسة في التحول</span>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--text);">
+                        <strong>الشركاء:</strong> EU, ESCWA, UNIDO, Oracle, AWS, Microsoft
+                    </p>
+                </div>
+            </div>
+
+            <!-- Specialized Tools Tab -->
+            <div id="specialized-tools" class="tab-content">
+                <div class="cards-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">✅ VibeGrade</div>
+                        </div>
+                        <div class="tool-price paid">13$ شهرياً</div>
+                        <p class="tool-description">تصحيح المقالات والواجبات بنقرة واحدة</p>
+                        <ul class="tool-features">
+                            <li>تصحيح تلقائي فوري</li>
+                            <li>كشف الانتحال والـ AI</li>
+                            <li>تغذية راجعة مفصلة</li>
+                            <li>10 مقالات مجاناً</li>
+                        </ul>
+                        <a href="https://vibegrade.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">📊 Diffit</div>
+                        </div>
+                        <div class="tool-price">مجاني</div>
+                        <p class="tool-description">تحويل أي محتوى لأي مستوى تعليمي (2-11)</p>
+                        <ul class="tool-features">
+                            <li>تحويل فوري للمستويات</li>
+                            <li>من YouTube أيضاً</li>
+                            <li>أنشطة مخصصة تلقائية</li>
+                            <li>سهل الاستخدام</li>
+                        </ul>
+                        <a href="https://www.diffit.me" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🎯 Quizizz</div>
+                        </div>
+                        <div class="tool-price">Freemium</div>
+                        <p class="tool-description">اختبارات تفاعلية ممتعة مع AI</p>
+                        <ul class="tool-features">
+                            <li>إنشاء اختبارات بالذكاء الاصطناعي</li>
+                            <li>ألعاب تعليمية تفاعلية</li>
+                            <li>تقارير فورية</li>
+                            <li>مكتبة ضخمة من الاختبارات</li>
+                        </ul>
+                        <a href="https://quizizz.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">📝 Gradescope</div>
+                        </div>
+                        <div class="tool-price">مجاني للأفراد</div>
+                        <p class="tool-description">تصحيح جماعي يوفر 80% من الوقت</p>
+                        <ul class="tool-features">
+                            <li>تجميع الإجابات المتشابهة</li>
+                            <li>تصحيح دفعة واحدة</li>
+                            <li>توفير هائل للوقت</li>
+                            <li>مناسب للاختبارات الكبيرة</li>
+                        </ul>
+                        <a href="https://www.gradescope.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">🎨 Canva AI</div>
+                        </div>
+                        <div class="tool-price">Freemium</div>
+                        <p class="tool-description">تصميم عروض ومواد تعليمية احترافية</p>
+                        <ul class="tool-features">
+                            <li>Magic Design بالذكاء الاصطناعي</li>
+                            <li>آلاف القوالب الجاهزة</li>
+                            <li>إنشاء صور بـ AI</li>
+                            <li>سهل للغاية</li>
+                        </ul>
+                        <a href="https://www.canva.com" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-title">❓ Quizbot</div>
+                        </div>
+                        <div class="tool-price paid">من 9$ شهرياً</div>
+                        <p class="tool-description">مولد أسئلة ذكي من أي محتوى</p>
+                        <ul class="tool-features">
+                            <li>أسئلة من PDF, Word, فيديو</li>
+                            <li>أنواع متعددة من الأسئلة</li>
+                            <li>Bloom's Taxonomy</li>
+                            <li>تصدير لـ LMS</li>
+                        </ul>
+                        <a href="https://quizbot.ai" target="_blank" class="tool-link">جرّب الآن ←</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Scenarios -->
+        <section id="scenarios">
+            <div class="section-header">
+                <h2>💡 سيناريوهات عملية مفصلة</h2>
+                <p>أمثلة واقعية بخطوات تفصيلية للتطبيق الفوري</p>
+            </div>
+
+            <!-- Scenario 1 -->
+            <div class="scenario-card">
+                <div class="scenario-header">
+                    <div class="scenario-number">1</div>
+                    <div>
+                        <div class="scenario-title">تحضير درس كامل في 15 دقيقة ⚡</div>
+                        <p style="margin-top: 0.5rem; opacity: 0.9;">الموقف: درس عن "الدورة الدموية" للصف السادس، الدرس غداً 8 صباحاً</p>
+                    </div>
+                </div>
+
+                <div class="scenario-steps">
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 1-3 دقائق</span>
+                            خطة الدرس مع ChatGPT
+                        </div>
+                        <p>افتح ChatGPT واكتب: "أنشئ خطة درس تفصيلية عن الدورة الدموية للصف السادس، تتضمن: مقدمة تشويقية، 3 أنشطة تفاعلية، أمثلة من الحياة، وأسئلة تقييم"</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 4-6 دقائق</span>
+                            عرض تقديمي مع Canva AI
+                        </div>
+                        <p>افتح Canva → اختر "عرض تقديمي" → استخدم Magic Design → أدخل موضوع الدرس → احصل على 10 شرائح جاهزة</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 7-9 دقائق</span>
+                            اختبار سريع مع Quizbot
+                        </div>
+                        <p>افتح Quizbot → الصق نص الدرس → اختر "15 سؤال متنوع" → احصل على اختبار جاهز للطباعة</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 10-12 دقائق</span>
+                            بودكاست تعليمي مع NotebookLM
+                        </div>
+                        <p>افتح NotebookLM → أنشئ Notebook → أضف محتوى الدرس → اضغط "Generate Audio Overview" → احصل على بودكاست 3 دقائق</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 13-15 دقائق</span>
+                            ورقة عمل مع MagicSchool
+                        </div>
+                        <p>افتح MagicSchool → اختر "Worksheet Generator" → أدخل الموضوع والصف → احصل على ورقة عمل تفاعلية</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                    <strong>🎉 النتيجة:</strong> درس متكامل في 15 دقيقة بدلاً من 3 ساعات!
+                </div>
+            </div>
+
+            <!-- Scenario 2 -->
+            <div class="scenario-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="scenario-header">
+                    <div class="scenario-number">2</div>
+                    <div>
+                        <div class="scenario-title">تصحيح 30 اختباراً في 10 دقائق ✅</div>
+                        <p style="margin-top: 0.5rem; opacity: 0.9;">الموقف: 30 اختبار مقالي يجب تسليمها قبل نهاية اليوم</p>
+                    </div>
+                </div>
+
+                <div class="scenario-steps">
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ دقيقة واحدة</span>
+                            التحضير
+                        </div>
+                        <p>صوّر جميع الاختبارات أو اجمعها في PDF واحد</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ دقيقتان</span>
+                            إنشاء Rubric
+                        </div>
+                        <p>افتح VibeGrade → حدد معايير التصحيح → اختر توزيع الدرجات</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">
+                            <span class="step-time">⏱️ 7 دقائق</span>
+                            التصحيح الجماعي
+                        </div>
+                        <p>ارفع ملف PDF → اضغط "Grade All" → احصل على تقرير شامل لكل طالب</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                    <strong>🎉 التوفير:</strong> من 5 ساعات إلى 10 دقائق = 290 دقيقة موفرة!
+                </div>
+            </div>
+
+            <!-- Scenario 3 -->
+            <div class="scenario-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="scenario-header">
+                    <div class="scenario-number">3</div>
+                    <div>
+                        <div class="scenario-title">تخصيص تعليم لـ 25 طالباً 🎯</div>
+                        <p style="margin-top: 0.5rem; opacity: 0.9;">الموقف: فصل 25 طالباً بمستويات مختلفة (متعثرين، متوسطين، متفوقين)</p>
+                    </div>
+                </div>
+
+                <div class="scenario-steps">
+                    <div class="step">
+                        <div class="step-title">الخطوة 1: المحتوى الأساسي</div>
+                        <p>حضّر درس واحد للمستوى المتوسط</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">الخطوة 2: إنشاء 3 مستويات</div>
+                        <p>افتح Diffit → الصق الدرس → اختر المستويات (4، 6، 8) → احصل على 3 نسخ مخصصة تلقائياً</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">الخطوة 3: الأنشطة المخصصة</div>
+                        <p>Diffit سيُنشئ لك أنشطة مناسبة لكل مستوى تلقائياً</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-title">الخطوة 4: التوزيع</div>
+                        <p>وزّع المحتوى حسب مستوى كل طالب</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 10px; margin-top: 2rem; text-align: center;">
+                    <strong>🎉 النتيجة:</strong> تعليم مخصص لكل طالب دون جهد إضافي!
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>💬 شهادات المعلمين</h2>
+                <p>تجارب حقيقية من معلمين يستخدمون الذكاء الاصطناعي</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "قبل سراج، كنت أحتاج 3 ساعات لتحضير اختبار واحد. الآن أنجزه في 15 دقيقة بجودة أعلى! سراج غيّر حياتي المهنية تماماً."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">أ</div>
+                        <div class="author-info">
+                            <div class="author-name">أحمد محمود</div>
+                            <div class="author-role">معلم رياضيات - عمّان 🇯🇴</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "MagicSchool AI وفّر لي 12 ساعة أسبوعياً! الآن أستطيع التركيز على التفاعل مع الطلاب بدلاً من الأعمال الروتينية."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ف</div>
+                        <div class="author-info">
+                            <div class="author-name">فاطمة العلي</div>
+                            <div class="author-role">معلمة لغة عربية - دبي 🇦🇪</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "NotebookLM ساعدني أحوّل كتاباً كاملاً إلى بودكاست تعليمي لطلابي. الطلاب يحبونه ويستمعون له في طريقهم للمدرسة!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">م</div>
+                        <div class="author-info">
+                            <div class="author-name">محمد السعيد</div>
+                            <div class="author-role">معلم تاريخ - الرياض 🇸🇦</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "سراج يتيح محاكاة تجارب فيزيائية معقدة يصعب تنفيذها. الطلاب يحللون ويستنتجون بدلاً من التلقين. التفكير النقدي تحسّن 50%!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ه</div>
+                        <div class="author-info">
+                            <div class="author-name">هيفاء المجالي</div>
+                            <div class="author-role">معلمة فيزياء - إربد 🇯🇴</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Diffit ساعدني أخدم جميع مستويات طلابي. الآن كل طالب يتعلم بالطريقة المناسبة له. درجات الفصل تحسنت 30%!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">س</div>
+                        <div class="author-info">
+                            <div class="author-name">سارة الشامي</div>
+                            <div class="author-role">معلمة علوم - القاهرة 🇪🇬</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "ChatGPT-5 ساعدني أصمم أنشطة إبداعية ما كنت أفكر فيها! الطلاب متحمسون للحصة وأنا مرتاح البال."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ع</div>
+                        <div class="author-info">
+                            <div class="author-name">علي الكندي</div>
+                            <div class="author-role">معلم اجتماعيات - مسقط 🇴🇲</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section id="downloads">
+            <div class="section-header">
+                <h2>📥 التحميلات والملحقات</h2>
+                <p>جميع الملفات مجانية ومتاحة للتحميل الفوري</p>
+            </div>
+
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <div class="download-icon">📄</div>
+                    <h3>الدليل الكامل (Word)</h3>
+                    <p class="file-size">46 KB | 30+ صفحة</p>
+                    <p>دليل شامل بجميع الأدوات والسيناريوهات والمبادرات الأردنية</p>
+                    <a href="#" class="download-btn" onclick="alert('الملف متاح في القسم النهائي'); return false;">تحميل DOCX</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">📚</div>
+                    <h3>المصادر الكاملة</h3>
+                    <p class="file-size">15 KB | 45+ مصدر</p>
+                    <p>قائمة شاملة بجميع المصادر والمراجع الموثوقة مع الروابط</p>
+                    <a href="#" class="download-btn" onclick="alert('الملف متاح في القسم النهائي'); return false;">تحميل TXT</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">📋</div>
+                    <h3>ملخص التحديثات</h3>
+                    <p class="file-size">8 KB</p>
+                    <p>ملخص سريع لجميع التحديثات والإضافات في النسخة الجديدة</p>
+                    <a href="#" class="download-btn" onclick="alert('الملف متاح في القسم النهائي'); return false;">تحميل TXT</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">🇯🇴</div>
+                    <h3>دليل سراج المفصل</h3>
+                    <p class="file-size">جزء من الدليل</p>
+                    <p>معلومات مفصلة عن المساعد الذكي سراج وطريقة استخدامه</p>
+                    <a href="https://siraj.moe.gov.jo" target="_blank" class="download-btn" style="background: #007a3d;">زيارة سراج</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">🎯</div>
+                    <h3>السيناريوهات العملية</h3>
+                    <p class="file-size">جزء من الدليل</p>
+                    <p>3 سيناريوهات مفصلة جاهزة للتطبيق الفوري</p>
+                    <a href="#scenarios" class="download-btn">عرض السيناريوهات</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">🌐</div>
+                    <h3>هذا الموقع (HTML)</h3>
+                    <p class="file-size">~150 KB</p>
+                    <p>نسخة HTML كاملة من هذا الموقع للاستخدام دون اتصال</p>
+                    <a href="#" class="download-btn" onclick="alert('سيتم توفير رابط التحميل قريباً'); return false;">تحميل HTML</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 15px;">
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">💡 نصيحة</h3>
+                <p style="color: var(--text); font-size: 1.1rem;">
+                    ابدأ بتحميل <strong>الدليل الكامل</strong> واقرأ القسم الأول، ثم اختر أداة واحدة لتجربتها هذا الأسبوع!
+                </p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <div class="section-header">
+                <h2>📚 موارد إضافية</h2>
+                <p>دورات، مجتمعات، وروابط مفيدة</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <span class="card-icon">🎓</span>
+                    <h3>دورات تدريبية مجانية</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• Oracle University - AI Training</li>
+                        <li style="padding: 0.5rem 0;">• AWS Academy - Cloud & AI</li>
+                        <li style="padding: 0.5rem 0;">• Microsoft Learn - AI Fundamentals</li>
+                        <li style="padding: 0.5rem 0;">• Google AI Education</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">👥</span>
+                    <h3>مجتمعات عربية</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• مجتمع المعلمين العرب للذكاء الاصطناعي</li>
+                        <li style="padding: 0.5rem 0;">• مجموعة الذكاء الاصطناعي في التعليم</li>
+                        <li style="padding: 0.5rem 0;">• منتدى التعليم الرقمي العربي</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🔗</span>
+                    <h3>روابط مهمة</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• <a href="https://siraj.moe.gov.jo" target="_blank">سراج 🇯🇴</a></li>
+                        <li style="padding: 0.5rem 0;">• <a href="https://jolearn.jo" target="_blank">JoLearn</a></li>
+                        <li style="padding: 0.5rem 0;">• <a href="https://www.unesco.org" target="_blank">UNESCO AI</a></li>
+                        <li style="padding: 0.5rem 0;">• <a href="https://www.edutopia.org" target="_blank">Edutopia</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">📊</span>
+                    <h3>إحصائيات 2025</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">• 89% من المدارس تستخدم AI</li>
+                        <li style="padding: 0.5rem 0;">• توفير 12 ساعة أسبوعياً</li>
+                        <li style="padding: 0.5rem 0;">• تحسن 23% في النتائج</li>
+                        <li style="padding: 0.5rem 0;">• 94% رضا المعلمين</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <div class="highlight-box" style="margin: 5rem 0;">
+            <h3>🚀 ابدأ رحلتك مع الذكاء الاصطناعي اليوم!</h3>
+            <p style="font-size: 1.2rem; margin: 1.5rem 0;">لا تنتظر أكثر - ابدأ الآن وشاهد الفرق</p>
+            <div class="btn-group">
+                <a href="#downloads" class="btn">📥 تحميل الدليل</a>
+                <a href="https://siraj.moe.gov.jo" target="_blank" class="btn" style="background: #007a3d;">🇯🇴 جرّب سراج</a>
+                <a href="#tools" class="btn btn-secondary">🛠️ استكشف الأدوات</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>📖 عن الدليل</h3>
+                <p>دليل شامل ومحدث للمعلمين العرب لاستخدام الذكاء الاصطناعي في التعليم. تم إعداده بعناية فائقة مع أكثر من 45 مصدراً موثوقاً.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>🔗 روابط سريعة</h3>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#tools">الأدوات</a></li>
+                    <li><a href="#siraj">سراج 🇯🇴</a></li>
+                    <li><a href="#scenarios">السيناريوهات</a></li>
+                    <li><a href="#downloads">التحميلات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>🇯🇴 المبادرات الأردنية</h3>
+                <ul>
+                    <li><a href="https://siraj.moe.gov.jo" target="_blank">سراج</a></li>
+                    <li><a href="https://jolearn.jo" target="_blank">JoLearn</a></li>
+                    <li><a href="https://emis.moe.gov.jo" target="_blank">OpenEMIS</a></li>
+                    <li><a href="https://www.joacademy.com" target="_blank">جو أكاديمي</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>📧 تواصل معنا</h3>
+                <p>هل لديك اقتراحات؟ هل وجدت أداة جديدة؟ شاركنا!</p>
+                <p style="margin-top: 1rem;">📅 آخر تحديث: 3 ديسمبر 2025</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 دليل الذكاء الاصطناعي في التعليم | جميع الحقوق محفوظة</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">صُنع بـ ❤️ للمعلمين العرب</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        ↑
+    </div>
+
+    <script>
+        // Tabs functionality
+        function openTab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+
+            // Remove active class from all buttons
+            var tabBtns = document.getElementsByClassName('tab-btn');
+            for (var i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove('active');
+            }
+
+            // Show selected tab and mark button as active
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Scroll to top functionality
+        window.onscroll = function() {
+            var scrollTop = document.getElementById('scrollTop');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        };
+
+        document.getElementById('scrollTop').addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card, .tool-card, .scenario-card, .download-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
